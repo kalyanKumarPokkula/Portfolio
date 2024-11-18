@@ -4,63 +4,63 @@ import { Github, ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
+    title: "Online BookStore E-commerce Application",
     description:
-      "A full-stack e-commerce solution with real-time inventory management and Stripe integration.",
+      "A microservices-based e-commerce platform for browsing, ordering, secure payments, and real-time notifications.",
     image:
-      "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=800&q=80",
-    tech: ["Microservices", "React", "MySql", "Stripe"],
-    github: "https://github.com",
+      "https://github.com/kalyanKumarPokkula/online-book-store/blob/master/images/books.png?raw=true",
+    tech: [
+      "Microservices",
+      "Node.Js",
+      "Spring Boot",
+      "Flask",
+      "GoLang",
+      "React",
+      "MySql",
+      "Stripe",
+    ],
+    github: "https://github.com/kalyanKumarPokkula/online-book-store.git",
     live: "https://example.com",
   },
   {
-    title: "Goals Tracker",
+    title: "Goals Tracker Application",
     description:
-      "Collaborative project management tool with real-time updates and team collaboration features.",
+      "A MERN stack-based goal tracker enabling user sign-up, goal creation, and deletion.",
     image:
-      "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&w=800&q=80",
+      "https://github.com/kalyanKumarPokkula/Goals_Fullstack/blob/master/pics/landingpage.png?raw=true",
     tech: ["React", "TypeScript", "MongoDB", "Node.Js"],
-    github: "https://github.com",
+    github: "https://github.com/kalyanKumarPokkula/Goals_Fullstack.git",
     live: "https://example.com",
   },
   {
-    title: "AI Content Generator",
+    title: "TrackMyExpenses Applications",
     description:
-      "Content generation platform leveraging OpenAI API for creating marketing copy and articles.",
+      "A MERN stack-based trackMyExpenses enabling user sign-up, expenses creation, update expenses and deletion.",
     image:
-      "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80",
-    tech: ["React", "Python", "FastAPI", "OpenAI"],
-    github: "https://github.com",
+      "https://github.com/kalyanKumarPokkula/Expense-Tracker/blob/master/Pics/welcomewithoutsigninpage.png?raw=true",
+    tech: ["React", "JavaScirpt", "MongoDB", "Node.Js"],
+    github: "https://github.com/kalyanKumarPokkula/Expense-Tracker.git",
     live: "https://example.com",
   },
   {
-    title: "E-Commerce Platform",
+    title:
+      "AWS Infrastructure Provisioning with Terraform and Jenkins CI/CD Pipeline",
     description:
-      "A full-stack e-commerce solution with real-time inventory management and Stripe integration.",
+      "This project uses Terraform to provision AWS resources and Jenkins for CI/CD, automating resource creation and ensuring fast, reliable software delivery.",
     image:
-      "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=800&q=80",
-    tech: ["Microservices", "React", "MySql", "Stripe"],
-    github: "https://github.com",
+      "https://miro.medium.com/v2/resize:fit:761/1*ixEfBJ_tWQotJxF7s8YznQ.png",
+    tech: ["Jenkins", "Terraform", "AWS"],
+    github: "https://github.com/kalyanKumarPokkula/Terraform-Jenkins-Eks.git",
     live: "https://example.com",
   },
   {
-    title: "Goals Tracker",
+    title: "3-Tier Application Deployment on Amazon EKS",
     description:
-      "Collaborative project management tool with real-time updates and team collaboration features.",
+      "This project deploys a 3-tier application on Amazon EKS, with separate containers for the frontend, backend, and database, ensuring scalability and efficient management.",
     image:
-      "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&w=800&q=80",
-    tech: ["React", "TypeScript", "MongoDB", "Node.Js"],
-    github: "https://github.com",
-    live: "https://example.com",
-  },
-  {
-    title: "AI Content Generator",
-    description:
-      "Content generation platform leveraging OpenAI API for creating marketing copy and articles.",
-    image:
-      "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80",
-    tech: ["React", "Python", "FastAPI", "OpenAI"],
-    github: "https://github.com",
+      "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220306133735/Group-42.jpg",
+    tech: ["Kubernetes", "EKS", "AWS", "Docker"],
+    github: "https://github.com/kalyanKumarPokkula/K8s-ExpenseTracker-app.git",
     live: "https://example.com",
   },
 ];

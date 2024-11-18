@@ -19,6 +19,9 @@ export default function Header() {
             Kalyan Kumar
           </motion.div>
           <div className="flex items-center gap-6">
+            <a href="#" className="text-gray-600 hover:text-gray-900">
+              Home
+            </a>
             <a href="#about" className="text-gray-600 hover:text-gray-900">
               About
             </a>

@@ -1,29 +1,32 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Code2, Brain, Users, Rocket } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { Code2, Brain, Users, Rocket } from "lucide-react";
 
 export default function About() {
   const qualities = [
     {
       icon: <Code2 className="w-6 h-6" />,
-      title: 'Clean Code',
-      description: 'Writing maintainable, scalable, and efficient code following best practices.'
+      title: "Clean Code",
+      description:
+        "Writing maintainable, scalable, and efficient code following best practices.",
     },
     {
       icon: <Brain className="w-6 h-6" />,
-      title: 'Problem Solver',
-      description: 'Analytical thinker with a knack for solving complex technical challenges.'
+      title: "Problem Solver",
+      description:
+        "Analytical thinker with a knack for solving complex technical challenges.",
     },
     {
       icon: <Users className="w-6 h-6" />,
-      title: 'Team Player',
-      description: 'Excellent communicator who thrives in collaborative environments.'
+      title: "Team Player",
+      description:
+        "Excellent communicator who thrives in collaborative environments.",
     },
     {
       icon: <Rocket className="w-6 h-6" />,
-      title: 'Fast Learner',
-      description: 'Quick to adapt and master new technologies and frameworks.'
-    }
+      title: "Fast Learner",
+      description: "Quick to adapt and master new technologies and frameworks.",
+    },
   ];
 
   return (
@@ -38,12 +41,17 @@ export default function About() {
         >
           <h2 className="text-4xl font-bold text-gray-900 mb-4">About Me</h2>
           <p className="text-xl text-gray-600 mb-8">
-            I'm a passionate Full Stack Developer with 5 years of experience in building web applications.
-            My journey in tech started with a Computer Science degree, and I've been in love with coding ever since.
+            I'm an enthusiastic MCA graduate with a passion for Full Stack
+            Development and DevOps. Equipped with a solid foundation in
+            programming and expertise in modern web technologies, I am eager to
+            create innovative, scalable, and efficient solutions.
           </p>
           <p className="text-xl text-gray-600">
-            Currently focused on creating scalable applications using modern technologies,
-            I enjoy tackling complex problems and turning ideas into reality through elegant solutions.
+            With a keen interest in bridging development and operations, I enjoy
+            solving complex problems, optimizing workflows, and continuously
+            learning to stay ahead in the ever-evolving tech landscape. My goal
+            is to contribute to impactful projects and grow as a developer and
+            DevOps professional.
           </p>
         </motion.div>
 
@@ -60,7 +68,9 @@ export default function About() {
               <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4">
                 {quality.icon}
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">{quality.title}</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                {quality.title}
+              </h3>
               <p className="text-gray-600">{quality.description}</p>
             </motion.div>
           ))}

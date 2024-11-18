@@ -59,8 +59,8 @@ export default function Hero() {
             transition={{ delay: 1.2, duration: 0.5 }}
             className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto"
           >
-            Passionate full-stack developer and DevOps enthusiast dedicated to
-            building innovative web applications.
+            Full Stack Developer and DevOps enthusiast dedicated to creating
+            innovative, scalable, and efficient web solutions.
           </motion.p>
 
           <motion.div
