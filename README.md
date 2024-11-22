@@ -6,7 +6,7 @@ Welcome to my portfolio website! This project showcases my skills, experience, a
 
 ## 🖥️ Live Demo
 
-Check out my portfolio: [Your Portfolio URL]
+Check out my portfolio: [\[Your Portfolio URL\]](https://kalyankumarpokkula.vercel.app/)
 
 ---
 
@@ -57,10 +57,9 @@ To set up this project locally:
    npm install
    ```
 3. Start the development server:
-
-```
-npm run dev
-```
+   ```
+   npm run dev
+   ```
 
 ## Screenshots
 
