@@ -35,9 +35,11 @@ export default function Hero() {
                   initial="hidden"
                   animate="visible"
                   variants={nameAnimation}
-                  className={`text-7xl font-bold ${
+                  className={`font-bold ${
                     char === " " ? "mx-4" : ""
-                  } bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600`}
+                  } bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600
+                  text-4xl sm:text-5xl md:text-6xl lg:text-7xl
+                  max-w-xs sm:max-w-sm md:max-w-md lg:max-w-2xl`}
                 >
                   {char}
                 </motion.span>

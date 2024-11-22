@@ -56,7 +56,7 @@ export default function Header() {
             </motion.a>
             <motion.a
               whileHover={{ scale: 1.1 }}
-              href="mailto:john@example.com"
+              href="mailto:kalyankumarpokkula@gmail.com"
               className="text-gray-600 hover:text-gray-900"
             >
               <Mail size={20} />

@@ -134,10 +134,7 @@ export default function Projects() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-gray-600 hover:text-gray-900"
-                  >
-                    <ExternalLink size={20} />
-                    <span>Live Demo</span>
-                  </motion.a>
+                  ></motion.a>
                 </div>
               </div>
             </motion.div>
