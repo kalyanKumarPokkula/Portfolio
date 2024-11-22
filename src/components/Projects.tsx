@@ -68,7 +68,7 @@ const projects = [
     description:
       "elcome to my portfolio website! This project showcases my skills, experience, and projects",
     image:
-      "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220306133735/Group-42.jpg",
+      "https://github.com/kalyanKumarPokkula/Portfolio/blob/master/pics/homepage.png?raw=true",
     tech: ["React", "TypeScript", "tailwindCSS"],
     github: "https://github.com/kalyanKumarPokkula/Portfolio.git",
     live: "https://example.com",
