@@ -63,6 +63,16 @@ const projects = [
     github: "https://github.com/kalyanKumarPokkula/K8s-ExpenseTracker-app.git",
     live: "https://example.com",
   },
+  {
+    title: "Portfolio Website",
+    description:
+      "elcome to my portfolio website! This project showcases my skills, experience, and projects",
+    image:
+      "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220306133735/Group-42.jpg",
+    tech: ["React", "TypeScript", "tailwindCSS"],
+    github: "https://github.com/kalyanKumarPokkula/Portfolio.git",
+    live: "https://example.com",
+  },
 ];
 
 export default function Projects() {
