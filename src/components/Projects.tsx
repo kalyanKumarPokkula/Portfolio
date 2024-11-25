@@ -66,7 +66,7 @@ const projects = [
   {
     title: "Portfolio Website",
     description:
-      "elcome to my portfolio website! This project showcases my skills, experience, and projects",
+      "Welcome to my portfolio website! This project showcases my skills, experience, and projects",
     image:
       "https://github.com/kalyanKumarPokkula/Portfolio/blob/master/pics/homepage.png?raw=true",
     tech: ["React", "TypeScript", "tailwindCSS"],

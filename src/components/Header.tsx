@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
   return (
     <motion.header
       initial={{ y: -100, opacity: 0 }}
@@ -18,7 +23,23 @@ export default function Header() {
           >
             Kalyan Kumar
           </motion.div>
-          <div className="flex items-center gap-6">
+
+          {/* Hamburger Icon for Mobile */}
+          <div className="lg:hidden flex items-center">
+            <button
+              onClick={toggleMenu}
+              className="text-gray-600 hover:text-gray-900"
+            >
+              <motion.div whileHover={{ scale: 1.1 }}>
+                <span className="block w-6 h-0.5 bg-gray-600 mb-1"></span>
+                <span className="block w-6 h-0.5 bg-gray-600 mb-1"></span>
+                <span className="block w-6 h-0.5 bg-gray-600"></span>
+              </motion.div>
+            </button>
+          </div>
+
+          {/* Menu Items for Desktop */}
+          <div className="hidden lg:flex items-center gap-6">
             <a href="#" className="text-gray-600 hover:text-gray-900">
               Home
             </a>
@@ -35,7 +56,67 @@ export default function Header() {
               Contact
             </a>
           </div>
-          <div className="flex items-center gap-4">
+
+          {/* Icons for Desktop */}
+          <div className="hidden lg:flex items-center gap-4">
+            <motion.a
+              whileHover={{ scale: 1.1 }}
+              href="https://github.com/kalyanKumarPokkula"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-gray-900"
+            >
+              <Github size={20} />
+            </motion.a>
+            <motion.a
+              whileHover={{ scale: 1.1 }}
+              href="https://linkedin.com/in/kalyankumarpokkula"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-gray-900"
+            >
+              <Linkedin size={20} />
+            </motion.a>
+            <motion.a
+              whileHover={{ scale: 1.1 }}
+              href="mailto:kalyankumarpokkula@gmail.com"
+              className="text-gray-600 hover:text-gray-900"
+            >
+              <Mail size={20} />
+            </motion.a>
+          </div>
+        </div>
+
+        {/* Mobile Menu (Toggled) */}
+        <div className={`lg:hidden ${isMenuOpen ? "block" : "hidden"} mt-4`}>
+          <a href="#" className="block py-2 text-gray-600 hover:text-gray-900">
+            Home
+          </a>
+          <a
+            href="#about"
+            className="block py-2 text-gray-600 hover:text-gray-900"
+          >
+            About
+          </a>
+          <a
+            href="#skills"
+            className="block py-2 text-gray-600 hover:text-gray-900"
+          >
+            Skills
+          </a>
+          <a
+            href="#projects"
+            className="block py-2 text-gray-600 hover:text-gray-900"
+          >
+            Projects
+          </a>
+          <a
+            href="#contact"
+            className="block py-2 text-gray-600 hover:text-gray-900"
+          >
+            Contact
+          </a>
+          <div className="flex items-center gap-4 mt-4">
             <motion.a
               whileHover={{ scale: 1.1 }}
               href="https://github.com/kalyanKumarPokkula"
