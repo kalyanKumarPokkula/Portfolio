@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Edu AU VIC WA NT Pre", "sans-cursive"],
+        sans: ["Alegreya", "serif"],
       },
     },
   },
