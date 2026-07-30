@@ -7,5 +7,82 @@ html {
 }
 
 body {
-  @apply antialiased text-gray-800;
+  background-color: #070b14;
+  color: #e2e8f0;
+  font-family: 'Inter', 'Plus Jakarta Sans', system-ui, sans-serif;
+  @apply antialiased;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #22d3ee 0%, #818cf8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glass card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+/* Section background alternation */
+.section-dark {
+  background-color: #070b14;
+}
+
+.section-alt {
+  background-color: #0a0f1c;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #070b14; }
+::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #334155; }
+
+/* Orb float animations */
+@keyframes orb-a {
+  0%, 100% { transform: translate(0, 0); }
+  33% { transform: translate(40px, -40px); }
+  66% { transform: translate(-30px, 25px); }
+}
+@keyframes orb-b {
+  0%, 100% { transform: translate(0, 0); }
+  33% { transform: translate(-35px, 30px); }
+  66% { transform: translate(25px, -35px); }
+}
+.orb-1 { animation: orb-a 18s ease-in-out infinite; }
+.orb-2 { animation: orb-b 22s ease-in-out infinite; }
+.orb-3 { animation: orb-a 26s ease-in-out infinite reverse; }
+
+/* Shimmer */
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+.shimmer {
+  background: linear-gradient(90deg, transparent 0%, rgba(34,211,238,0.15) 50%, transparent 100%);
+  background-size: 200% auto;
+  animation: shimmer 3s linear infinite;
+}
+
+/* Tag badge hover lift */
+.skill-tag {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.skill-tag:hover {
+  transform: translateY(-2px);
+}
+
+/* Timeline vertical line */
+.tl-line {
+  background: linear-gradient(to bottom, #22d3ee, #818cf8, rgba(129,140,248,0));
 }
