@@ -53,7 +53,7 @@ export default function Header() {
               <a
                 key={link.label}
                 href={link.href}
-                className="text-slate-400 hover:text-cyan-400 transition-colors text-sm font-medium tracking-wide"
+                className="text-slate-400 hover:text-blue-400 transition-colors text-sm font-medium tracking-wide"
               >
                 {link.label}
               </a>
@@ -63,11 +63,11 @@ export default function Header() {
           {/* Desktop social icons */}
           <div className="hidden lg:flex items-center gap-4">
             <motion.a
-              whileHover={{ scale: 1.15, color: "#22d3ee" }}
+              whileHover={{ scale: 1.15, color: "#3b82f6" }}
               href="https://github.com/kalyanKumarPokkula"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-slate-400 hover:text-cyan-400 transition-colors"
+              className="text-slate-400 hover:text-blue-400 transition-colors"
             >
               <Github size={19} />
             </motion.a>
@@ -76,14 +76,14 @@ export default function Header() {
               href="https://linkedin.com/in/kalyankumarpokkula"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-slate-400 hover:text-cyan-400 transition-colors"
+              className="text-slate-400 hover:text-blue-400 transition-colors"
             >
               <Linkedin size={19} />
             </motion.a>
             <motion.a
               whileHover={{ scale: 1.15 }}
               href="mailto:kalyankumarpokkula1001@gmail.com"
-              className="text-slate-400 hover:text-cyan-400 transition-colors"
+              className="text-slate-400 hover:text-blue-400 transition-colors"
             >
               <Mail size={19} />
             </motion.a>
@@ -115,7 +115,7 @@ export default function Header() {
                     key={link.label}
                     href={link.href}
                     onClick={() => setIsMenuOpen(false)}
-                    className="py-2.5 px-2 text-slate-400 hover:text-cyan-400 transition-colors text-sm font-medium"
+                    className="py-2.5 px-2 text-slate-400 hover:text-blue-400 transition-colors text-sm font-medium"
                   >
                     {link.label}
                   </a>
@@ -126,7 +126,7 @@ export default function Header() {
                   href="https://github.com/kalyanKumarPokkula"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-slate-400 hover:text-cyan-400 transition-colors"
+                  className="text-slate-400 hover:text-blue-400 transition-colors"
                 >
                   <Github size={20} />
                 </a>
@@ -134,13 +134,13 @@ export default function Header() {
                   href="https://linkedin.com/in/kalyankumarpokkula"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-slate-400 hover:text-cyan-400 transition-colors"
+                  className="text-slate-400 hover:text-blue-400 transition-colors"
                 >
                   <Linkedin size={20} />
                 </a>
                 <a
                   href="mailto:kalyankumarpokkula1001@gmail.com"
-                  className="text-slate-400 hover:text-cyan-400 transition-colors"
+                  className="text-slate-400 hover:text-blue-400 transition-colors"
                 >
                   <Mail size={20} />
                 </a>

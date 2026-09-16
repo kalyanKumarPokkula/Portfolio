@@ -20,19 +20,19 @@ export default function Hero() {
       <div
         className="orb-1 absolute top-1/4 left-1/4 w-96 h-96 rounded-full pointer-events-none"
         style={{
-          background: "radial-gradient(circle, rgba(34,211,238,0.11) 0%, transparent 70%)",
+          background: "radial-gradient(circle, rgba(96,165,250,0.11) 0%, transparent 70%)",
         }}
       />
       <div
         className="orb-2 absolute bottom-1/4 right-1/4 w-80 h-80 rounded-full pointer-events-none"
         style={{
-          background: "radial-gradient(circle, rgba(129,140,248,0.09) 0%, transparent 70%)",
+          background: "radial-gradient(circle, rgba(37,99,235,0.09) 0%, transparent 70%)",
         }}
       />
       <div
         className="orb-3 absolute top-3/4 left-1/2 w-64 h-64 rounded-full pointer-events-none"
         style={{
-          background: "radial-gradient(circle, rgba(34,211,238,0.05) 0%, transparent 70%)",
+          background: "radial-gradient(circle, rgba(96,165,250,0.05) 0%, transparent 70%)",
         }}
       />
 
@@ -54,9 +54,9 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-cyan-400/25 bg-cyan-400/5 text-cyan-400 text-sm font-medium mb-10 tracking-wide"
+            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-blue-400/25 bg-blue-400/5 text-blue-400 text-sm font-medium mb-10 tracking-wide"
           >
-            <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
+            <span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse" />
             Open to SDE Roles
           </motion.div>
 
@@ -85,7 +85,7 @@ export default function Hero() {
             </span>
             <span className="text-slate-700 hidden sm:block text-xl">·</span>
             <span className="text-lg sm:text-xl font-medium tracking-wide"
-              style={{ color: "#a78bfa" }}>
+              style={{ color: "#38bdf8" }}>
               SaaS & AI Systems
             </span>
           </motion.div>
@@ -100,7 +100,7 @@ export default function Hero() {
           >
             I design and ship scalable backend systems, SaaS platforms, and AI-powered
             tools. Currently building{" "}
-            <span className="text-cyan-400 font-semibold">ZunoSync</span> — a
+            <span className="text-blue-400 font-semibold">ZunoSync</span> — a
             production multi-tenant social media automation platform serving
             global users with{" "}
             <span className="text-slate-300 font-medium">
@@ -122,8 +122,8 @@ export default function Hero() {
               href="#projects"
               className="px-7 py-3 rounded-xl font-semibold text-sm text-white transition-all"
               style={{
-                background: "linear-gradient(135deg, #22d3ee, #818cf8)",
-                boxShadow: "0 0 28px rgba(34,211,238,0.22)",
+                background: "linear-gradient(135deg, #60a5fa, #2563eb)",
+                boxShadow: "0 0 28px rgba(96,165,250,0.22)",
               }}
             >
               View Projects
@@ -132,7 +132,7 @@ export default function Hero() {
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
               href="#contact"
-              className="px-7 py-3 rounded-xl font-semibold text-sm text-slate-300 border border-slate-700/80 hover:text-cyan-400 hover:border-cyan-400/40 transition-all"
+              className="px-7 py-3 rounded-xl font-semibold text-sm text-slate-300 border border-slate-700/80 hover:text-blue-400 hover:border-blue-400/40 transition-all"
             >
               Contact Me
             </motion.a>
@@ -150,7 +150,7 @@ export default function Hero() {
               href="https://linkedin.com/in/kalyankumarpokkula"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-xl border border-slate-700/80 text-slate-400 hover:text-cyan-400 hover:border-cyan-400/40 transition-all"
+              className="p-3 rounded-xl border border-slate-700/80 text-slate-400 hover:text-blue-400 hover:border-blue-400/40 transition-all"
             >
               <Linkedin size={18} />
             </motion.a>

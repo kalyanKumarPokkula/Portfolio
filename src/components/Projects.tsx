@@ -36,8 +36,8 @@ const projects: Project[] = [
     live: "https://zunosync.com",
     featured: true,
     category: "Professional",
-    gradient: "from-cyan-500/20 via-sky-600/10 to-indigo-600/20",
-    iconBg: "bg-cyan-400/20 text-cyan-300",
+    gradient: "from-blue-500/20 via-sky-600/10 to-blue-700/20",
+    iconBg: "bg-blue-400/20 text-blue-300",
     icon: <Globe className="w-8 h-8" />,
     highlights: ["46 Controllers", "9 OAuth Platforms", "Dual Payment Gateway"],
   },
@@ -50,8 +50,8 @@ const projects: Project[] = [
     live: "https://www.lexvuip.com",
     featured: true,
     category: "Professional",
-    gradient: "from-violet-500/20 via-purple-600/10 to-fuchsia-600/20",
-    iconBg: "bg-violet-400/20 text-violet-300",
+    gradient: "from-sky-500/20 via-blue-600/10 to-slate-600/20",
+    iconBg: "bg-sky-400/20 text-sky-300",
     icon: <Globe className="w-8 h-8" />,
     highlights: ["SEO Optimized", "Mobile Responsive", "Performance First"],
   },
@@ -63,7 +63,7 @@ const projects: Project[] = [
     github: "https://github.com/kalyanKumarPokkula",
     live: null,
     category: "AI/ML",
-    gradient: "from-emerald-500/20 via-teal-600/10 to-cyan-600/20",
+    gradient: "from-emerald-500/20 via-teal-600/10 to-teal-700/20",
     iconBg: "bg-emerald-400/20 text-emerald-300",
     icon: <Mail className="w-8 h-8" />,
     highlights: ["80% Time Reduction", "95% Task Accuracy", "Chrome Extension"],
@@ -89,7 +89,7 @@ const projects: Project[] = [
     github: "https://github.com/kalyanKumarPokkula",
     live: null,
     category: "AI/ML",
-    gradient: "from-pink-500/20 via-rose-600/10 to-fuchsia-600/20",
+    gradient: "from-pink-500/20 via-rose-600/10 to-rose-700/20",
     iconBg: "bg-pink-400/20 text-pink-300",
     icon: <MousePointerClick className="w-8 h-8" />,
     highlights: ["100% Private", "60% Lower Latency", "<3s Response"],
@@ -102,8 +102,8 @@ const projects: Project[] = [
     github: null,
     live: null,
     category: "Backend",
-    gradient: "from-blue-500/20 via-indigo-600/10 to-violet-600/20",
-    iconBg: "bg-blue-400/20 text-blue-300",
+    gradient: "from-amber-600/20 via-orange-600/10 to-amber-800/20",
+    iconBg: "bg-amber-400/20 text-amber-300",
     icon: <Banknote className="w-8 h-8" />,
     highlights: ["RBAC System", "Docker Deploy", "AWS S3 Backups"],
   },
@@ -112,9 +112,9 @@ const projects: Project[] = [
 const categories = ["All", "Professional", "Backend", "AI/ML"];
 
 const categoryStyle: Record<string, string> = {
-  Professional: "bg-cyan-400/10 text-cyan-300 border-cyan-400/30",
-  Backend: "bg-indigo-400/10 text-indigo-300 border-indigo-400/30",
-  "AI/ML": "bg-purple-400/10 text-purple-300 border-purple-400/30",
+  Professional: "bg-blue-400/10 text-blue-300 border-blue-400/30",
+  Backend: "bg-amber-400/10 text-amber-300 border-amber-400/30",
+  "AI/ML": "bg-teal-400/10 text-teal-300 border-teal-400/30",
 };
 
 export default function Projects() {
@@ -136,7 +136,7 @@ export default function Projects() {
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
-          <p className="text-cyan-400 text-sm font-semibold tracking-widest uppercase mb-3">
+          <p className="text-blue-400 text-sm font-semibold tracking-widest uppercase mb-3">
             My Work
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -144,7 +144,7 @@ export default function Projects() {
           </h2>
           <div
             className="w-16 h-1 mx-auto rounded-full"
-            style={{ background: "linear-gradient(90deg,#22d3ee,#818cf8)" }}
+            style={{ background: "linear-gradient(90deg,#60a5fa,#2563eb)" }}
           />
         </motion.div>
 
@@ -168,8 +168,8 @@ export default function Projects() {
               style={
                 activeFilter === cat
                   ? {
-                      background: "linear-gradient(135deg,#22d3ee,#818cf8)",
-                      boxShadow: "0 0 20px rgba(34,211,238,0.2)",
+                      background: "linear-gradient(135deg,#60a5fa,#2563eb)",
+                      boxShadow: "0 0 20px rgba(96,165,250,0.2)",
                     }
                   : {}
               }
@@ -278,7 +278,7 @@ export default function Projects() {
                       href={project.live}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-1.5 text-sm text-cyan-400 hover:text-cyan-300 transition-colors font-medium"
+                      className="flex items-center gap-1.5 text-sm text-blue-400 hover:text-blue-300 transition-colors font-medium"
                     >
                       <ExternalLink size={15} />
                       Live Site

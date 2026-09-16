@@ -7,33 +7,33 @@ const traits = [
     icon: <Code2 className="w-5 h-5" />,
     title: "Systems Thinker",
     desc: "Designs for scalability and maintainability from day one — RESTful APIs, clean separation of concerns, and modular service boundaries.",
-    color: "text-cyan-400",
-    bg: "bg-cyan-400/10",
-    border: "border-cyan-400/10",
+    color: "text-blue-400",
+    bg: "bg-blue-400/10",
+    border: "border-blue-400/10",
   },
   {
     icon: <Brain className="w-5 h-5" />,
     title: "Backend-First Mindset",
     desc: "Fluent in distributed systems, database optimization, event-driven architectures, and production-grade API design.",
-    color: "text-indigo-400",
-    bg: "bg-indigo-400/10",
-    border: "border-indigo-400/10",
+    color: "text-sky-400",
+    bg: "bg-sky-400/10",
+    border: "border-sky-400/10",
   },
   {
     icon: <Shield className="w-5 h-5" />,
     title: "Security-Aware",
     desc: "Implements OAuth 2.0 with AES-256-GCM token encryption, RBAC, rate limiting, reCAPTCHA, and signed JWT flows as standard practice.",
-    color: "text-emerald-400",
-    bg: "bg-emerald-400/10",
-    border: "border-emerald-400/10",
+    color: "text-blue-300",
+    bg: "bg-blue-300/10",
+    border: "border-blue-300/10",
   },
   {
     icon: <Rocket className="w-5 h-5" />,
     title: "Rapid Execution",
     desc: "Delivers production-ready features fast — from RAG-based AI pipelines to multi-tenant SaaS backends and containerized full-stack deployments.",
-    color: "text-violet-400",
-    bg: "bg-violet-400/10",
-    border: "border-violet-400/10",
+    color: "text-blue-400",
+    bg: "bg-blue-400/10",
+    border: "border-blue-400/10",
   },
 ];
 
@@ -57,7 +57,7 @@ export default function About() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <p className="text-cyan-400 text-sm font-semibold tracking-widest uppercase mb-3">
+          <p className="text-blue-400 text-sm font-semibold tracking-widest uppercase mb-3">
             Background
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -65,7 +65,7 @@ export default function About() {
           </h2>
           <div
             className="w-16 h-1 mx-auto rounded-full"
-            style={{ background: "linear-gradient(90deg,#22d3ee,#818cf8)" }}
+            style={{ background: "linear-gradient(90deg,#60a5fa,#2563eb)" }}
           />
         </motion.div>
 
@@ -79,9 +79,9 @@ export default function About() {
           >
             <p className="text-slate-200 text-lg leading-relaxed mb-5" style={{ fontWeight: 400 }}>
               I'm a{" "}
-              <span className="text-cyan-400 font-semibold">Full Stack Software Engineer</span>{" "}
+              <span className="text-blue-400 font-semibold">Full Stack Software Engineer</span>{" "}
               with a focus on backend systems and SaaS infrastructure. Currently at{" "}
-              <span className="text-indigo-400 font-semibold">mTouch Labs Pvt Ltd</span>, I
+              <span className="text-sky-400 font-semibold">mTouch Labs Pvt Ltd</span>, I
               architect and maintain the core backend of{" "}
               <span className="text-white font-semibold">ZunoSync</span> — a
               production multi-tenant social media automation platform with OAuth 2.0
@@ -129,7 +129,7 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="grid grid-cols-1 sm:grid-cols-2 gap-5"
+            className="grid grid-cols-1 sm:grid-cols-2 gap-5 items-start"
           >
             {traits.map((trait, i) => (
               <motion.div

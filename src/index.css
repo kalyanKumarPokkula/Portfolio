@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5 {
 
 /* Gradient text */
 .gradient-text {
-  background: linear-gradient(135deg, #22d3ee 0%, #818cf8 100%);
+  background: linear-gradient(135deg, #60a5fa 0%, #2563eb 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5 {
   100% { background-position: 200% center; }
 }
 .shimmer {
-  background: linear-gradient(90deg, transparent 0%, rgba(34,211,238,0.15) 50%, transparent 100%);
+  background: linear-gradient(90deg, transparent 0%, rgba(96,165,250,0.15) 50%, transparent 100%);
   background-size: 200% auto;
   animation: shimmer 3s linear infinite;
 }
@@ -84,5 +84,5 @@ h1, h2, h3, h4, h5 {
 
 /* Timeline vertical line */
 .tl-line {
-  background: linear-gradient(to bottom, #22d3ee, #818cf8, rgba(129,140,248,0));
+  background: linear-gradient(to bottom, #60a5fa, #2563eb, rgba(37,99,235,0));
 }

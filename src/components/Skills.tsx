@@ -1,25 +1,28 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Code2, Layers, Database, Cloud, Wrench } from "lucide-react";
+import { Code2, Layers, Database, Cloud, ShieldCheck, Wrench } from "lucide-react";
 
 const skillCategories = [
   {
     title: "Languages",
     icon: <Code2 className="w-5 h-5" />,
-    color: "text-cyan-400",
-    borderColor: "border-cyan-400/25",
-    bg: "bg-cyan-400/8",
-    tagBg: "bg-cyan-400/10 border-cyan-400/25 text-cyan-300",
+    color: "text-blue-400",
+    borderColor: "border-blue-400/25",
+    bg: "bg-blue-400/8",
+    tagBg: "bg-blue-400/10 border-blue-400/25 text-blue-300",
     skills: ["Java", "JavaScript", "TypeScript", "Python", "SQL"],
   },
   {
     title: "Frameworks",
     icon: <Layers className="w-5 h-5" />,
-    color: "text-indigo-400",
-    borderColor: "border-indigo-400/25",
-    bg: "bg-indigo-400/8",
-    tagBg: "bg-indigo-400/10 border-indigo-400/25 text-indigo-300",
-    skills: ["Node.js", "Express.js", "React.js", "Spring Boot", "Flask", "FastAPI"],
+    color: "text-sky-400",
+    borderColor: "border-sky-400/25",
+    bg: "bg-sky-400/8",
+    tagBg: "bg-sky-400/10 border-sky-400/25 text-sky-300",
+    skills: [
+      "Node.js", "Express.js", "React.js", "Spring Boot", "Flask", "FastAPI",
+      "HTML", "CSS", "Tailwind CSS",
+    ],
   },
   {
     title: "Databases",
@@ -33,54 +36,37 @@ const skillCategories = [
   {
     title: "Cloud & DevOps",
     icon: <Cloud className="w-5 h-5" />,
-    color: "text-orange-400",
-    borderColor: "border-orange-400/25",
-    bg: "bg-orange-400/8",
-    tagBg: "bg-orange-400/10 border-orange-400/25 text-orange-300",
+    color: "text-amber-400",
+    borderColor: "border-amber-400/25",
+    bg: "bg-amber-400/8",
+    tagBg: "bg-amber-400/10 border-amber-400/25 text-amber-300",
     skills: [
-      "AWS EC2",
-      "AWS S3",
-      "AWS SES",
-      "AWS Lambda",
-      "Docker",
-      "Kubernetes",
-      "Jenkins",
-      "Bitbucket CI/CD",
-      "Nginx",
-      "PM2",
+      "AWS EC2", "AWS S3", "AWS SES", "AWS Lambda", "Docker",
+      "Kubernetes", "Jenkins", "Bitbucket CI/CD", "Nginx", "PM2",
     ],
   },
   {
-    title: "Tools & Others",
-    icon: <Wrench className="w-5 h-5" />,
-    color: "text-pink-400",
-    borderColor: "border-pink-400/25",
-    bg: "bg-pink-400/8",
-    tagBg: "bg-pink-400/10 border-pink-400/25 text-pink-300",
+    title: "Payments & Security",
+    icon: <ShieldCheck className="w-5 h-5" />,
+    color: "text-rose-400",
+    borderColor: "border-rose-400/25",
+    bg: "bg-rose-400/8",
+    tagBg: "bg-rose-400/10 border-rose-400/25 text-rose-300",
     skills: [
-      "Git",
-      "GitHub",
-      "Prisma ORM",
-      "JWT",
-      "OAuth 2.0",
-      "AES-256-GCM",
-      "Stripe",
-      "Razorpay",
-      "Cashfree",
-      "Apple IAP",
-      "Exotel V3",
-      "Firebase FCM",
-      "Google reCAPTCHA Enterprise",
-      "LangChain",
-      "Ollama",
-      "Puppeteer",
-      "ExcelJS",
-      "node-cron",
-      "Multer",
-      "Helmet",
-      "HTML",
-      "CSS",
-      "Tailwind CSS",
+      "Stripe", "Razorpay", "Cashfree", "Apple IAP", "OAuth 2.0",
+      "JWT", "AES-256-GCM", "Google reCAPTCHA Enterprise", "Helmet",
+    ],
+  },
+  {
+    title: "Tools & Integrations",
+    icon: <Wrench className="w-5 h-5" />,
+    color: "text-teal-400",
+    borderColor: "border-teal-400/25",
+    bg: "bg-teal-400/8",
+    tagBg: "bg-teal-400/10 border-teal-400/25 text-teal-300",
+    skills: [
+      "Git", "GitHub", "Prisma ORM", "Firebase FCM", "LangChain", "Ollama",
+      "Puppeteer", "ExcelJS", "node-cron", "Multer", "Exotel V3",
     ],
   },
 ];
@@ -97,7 +83,7 @@ export default function Skills() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <p className="text-cyan-400 text-sm font-semibold tracking-widest uppercase mb-3">
+          <p className="text-blue-400 text-sm font-semibold tracking-widest uppercase mb-3">
             What I Use
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -105,12 +91,12 @@ export default function Skills() {
           </h2>
           <div
             className="w-16 h-1 mx-auto rounded-full"
-            style={{ background: "linear-gradient(90deg,#22d3ee,#818cf8)" }}
+            style={{ background: "linear-gradient(90deg,#60a5fa,#2563eb)" }}
           />
         </motion.div>
 
         {/* Category grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 max-w-6xl mx-auto items-start">
           {skillCategories.map((cat, catIdx) => (
             <motion.div
               key={cat.title}

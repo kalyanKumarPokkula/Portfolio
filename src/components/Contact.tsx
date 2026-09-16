@@ -9,16 +9,16 @@ const contactInfo = [
     label: "Email",
     value: "kalyankumarpokkula1001@gmail.com",
     href: "mailto:kalyankumarpokkula1001@gmail.com",
-    color: "text-cyan-400",
-    bg: "bg-cyan-400/10",
+    color: "text-blue-400",
+    bg: "bg-blue-400/10",
   },
   {
     icon: <Phone className="w-5 h-5" />,
     label: "Phone",
     value: "+91 7993450325",
     href: "tel:+917993450325",
-    color: "text-indigo-400",
-    bg: "bg-indigo-400/10",
+    color: "text-sky-400",
+    bg: "bg-sky-400/10",
   },
   {
     icon: <MapPin className="w-5 h-5" />,
@@ -80,7 +80,7 @@ export default function Contact() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <p className="text-cyan-400 text-sm font-semibold tracking-widest uppercase mb-3">
+          <p className="text-blue-400 text-sm font-semibold tracking-widest uppercase mb-3">
             Let's Talk
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -88,7 +88,7 @@ export default function Contact() {
           </h2>
           <div
             className="w-16 h-1 mx-auto rounded-full"
-            style={{ background: "linear-gradient(90deg,#22d3ee,#818cf8)" }}
+            style={{ background: "linear-gradient(90deg,#60a5fa,#2563eb)" }}
           />
           <p className="text-slate-400 mt-6 max-w-xl mx-auto">
             Have a project in mind or want to collaborate? I'd love to hear
@@ -146,7 +146,7 @@ export default function Contact() {
                   href="https://linkedin.com/in/kalyankumarpokkula"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 px-4 py-2.5 rounded-xl border border-slate-700 text-slate-400 hover:text-cyan-400 hover:border-cyan-400/30 transition-all text-sm"
+                  className="flex items-center gap-2 px-4 py-2.5 rounded-xl border border-slate-700 text-slate-400 hover:text-blue-400 hover:border-blue-400/30 transition-all text-sm"
                 >
                   <Linkedin size={16} />
                   LinkedIn
@@ -174,7 +174,7 @@ export default function Contact() {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 placeholder="John Doe"
-                className="w-full px-4 py-3 rounded-xl bg-slate-800/60 border border-slate-700/60 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-400/50 focus:ring-1 focus:ring-cyan-400/20 transition-all text-sm"
+                className="w-full px-4 py-3 rounded-xl bg-slate-800/60 border border-slate-700/60 text-white placeholder-slate-600 focus:outline-none focus:border-blue-400/50 focus:ring-1 focus:ring-blue-400/20 transition-all text-sm"
               />
             </div>
             <div>
@@ -187,7 +187,7 @@ export default function Contact() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="john@example.com"
-                className="w-full px-4 py-3 rounded-xl bg-slate-800/60 border border-slate-700/60 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-400/50 focus:ring-1 focus:ring-cyan-400/20 transition-all text-sm"
+                className="w-full px-4 py-3 rounded-xl bg-slate-800/60 border border-slate-700/60 text-white placeholder-slate-600 focus:outline-none focus:border-blue-400/50 focus:ring-1 focus:ring-blue-400/20 transition-all text-sm"
               />
             </div>
             <div>
@@ -200,7 +200,7 @@ export default function Contact() {
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 placeholder="Tell me about your project..."
-                className="w-full px-4 py-3 rounded-xl bg-slate-800/60 border border-slate-700/60 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-400/50 focus:ring-1 focus:ring-cyan-400/20 transition-all text-sm resize-none"
+                className="w-full px-4 py-3 rounded-xl bg-slate-800/60 border border-slate-700/60 text-white placeholder-slate-600 focus:outline-none focus:border-blue-400/50 focus:ring-1 focus:ring-blue-400/20 transition-all text-sm resize-none"
               />
             </div>
 
@@ -211,7 +211,7 @@ export default function Contact() {
               disabled={status === "sending"}
               className="w-full py-3.5 rounded-xl font-semibold text-sm text-white flex items-center justify-center gap-2 transition-all disabled:opacity-60"
               style={{
-                background: "linear-gradient(135deg,#22d3ee,#818cf8)",
+                background: "linear-gradient(135deg,#60a5fa,#2563eb)",
                 boxShadow: "0 0 20px rgba(34,211,238,0.2)",
               }}
             >

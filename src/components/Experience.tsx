@@ -25,11 +25,11 @@ const experiences = [
       "AWS EC2/S3/SES/Lambda", "Firebase FCM", "Stripe", "Razorpay", "Cashfree",
       "Apple IAP", "AES-256-GCM", "Exotel V3", "OAuth 2.0", "JWT", "PM2", "Puppeteer", "ExcelJS",
     ],
-    dotColor: "#22d3ee",
-    glowColor: "rgba(34,211,238,0.35)",
-    borderColor: "rgba(34,211,238,0.15)",
-    tagColor: "bg-cyan-900/40 text-cyan-300 border-cyan-700/40",
-    accentText: "text-cyan-400",
+    dotColor: "#3b82f6",
+    glowColor: "rgba(59,130,246,0.35)",
+    borderColor: "rgba(59,130,246,0.15)",
+    tagColor: "bg-blue-900/40 text-blue-300 border-blue-700/40",
+    accentText: "text-blue-400",
   },
   {
     role: "Frontend Developer",
@@ -44,11 +44,11 @@ const experiences = [
       "Implemented technical SEO best practices — semantic HTML, meta optimization, structured data, and accessibility compliance — resulting in improved search visibility and WCAG 2.1 conformance.",
     ],
     tech: ["React.js", "Tailwind CSS", "Vercel"],
-    dotColor: "#818cf8",
-    glowColor: "rgba(129,140,248,0.35)",
-    borderColor: "rgba(129,140,248,0.15)",
-    tagColor: "bg-indigo-900/40 text-indigo-300 border-indigo-700/40",
-    accentText: "text-indigo-400",
+    dotColor: "#38bdf8",
+    glowColor: "rgba(56,189,248,0.35)",
+    borderColor: "rgba(56,189,248,0.15)",
+    tagColor: "bg-sky-900/40 text-sky-300 border-sky-700/40",
+    accentText: "text-sky-400",
   },
   {
     role: "AI Engineer",
@@ -63,11 +63,11 @@ const experiences = [
       "Deployed the entire LLM and retrieval stack on-premises with zero external data transmission, ensuring complete data privacy for sensitive legal documents.",
     ],
     tech: ["LangChain", "Ollama", "FAISS", "Chroma", "Python"],
-    dotColor: "#a78bfa",
-    glowColor: "rgba(167,139,250,0.35)",
-    borderColor: "rgba(167,139,250,0.15)",
-    tagColor: "bg-violet-900/40 text-violet-300 border-violet-700/40",
-    accentText: "text-violet-400",
+    dotColor: "#2dd4bf",
+    glowColor: "rgba(45,212,191,0.35)",
+    borderColor: "rgba(45,212,191,0.15)",
+    tagColor: "bg-teal-900/40 text-teal-300 border-teal-700/40",
+    accentText: "text-teal-400",
   },
   {
     role: "Full Stack Developer",
@@ -102,7 +102,7 @@ export default function Experience() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <p className="text-cyan-400 text-sm font-semibold tracking-widest uppercase mb-3">
+          <p className="text-blue-400 text-sm font-semibold tracking-widest uppercase mb-3">
             Career
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -110,14 +110,14 @@ export default function Experience() {
           </h2>
           <div
             className="w-16 h-1 mx-auto rounded-full"
-            style={{ background: "linear-gradient(90deg,#22d3ee,#818cf8)" }}
+            style={{ background: "linear-gradient(90deg,#60a5fa,#2563eb)" }}
           />
         </motion.div>
 
         <div className="max-w-4xl mx-auto">
           {/* Header icon */}
           <div className="flex items-center gap-3 mb-10">
-            <div className="w-9 h-9 rounded-xl bg-cyan-400/10 text-cyan-400 flex items-center justify-center">
+            <div className="w-9 h-9 rounded-xl bg-blue-400/10 text-blue-400 flex items-center justify-center">
               <Briefcase className="w-5 h-5" />
             </div>
             <h3 className="text-lg font-semibold text-white tracking-tight">
