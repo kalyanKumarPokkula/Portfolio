@@ -85,7 +85,8 @@ export default function About() {
               architect and maintain the core backend of{" "}
               <span className="text-white font-semibold">ZunoSync</span> — a
               production multi-tenant social media automation platform with OAuth 2.0
-              integrations across 9 platforms and a dual payment gateway.
+              integrations across 9 platforms, a 4-gateway payment ecosystem (Stripe,
+              Razorpay, Apple IAP, Cashfree), and AES-256-GCM-hardened token infrastructure.
             </p>
             <p className="text-slate-400 leading-relaxed mb-5">
               My primary stack is <strong className="text-slate-300">Node.js + Express.js</strong> for high-throughput REST APIs,{" "}
