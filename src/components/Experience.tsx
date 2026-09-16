@@ -4,7 +4,7 @@ import { Briefcase, ExternalLink } from "lucide-react";
 
 const experiences = [
   {
-    role: "Backend Developer",
+    role: "Software Engineer",
     company: "mTouch Labs Pvt Ltd",
     period: "Dec 2025 – Present",
     type: "Full-time",
